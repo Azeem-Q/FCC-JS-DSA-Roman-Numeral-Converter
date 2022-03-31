@@ -4,7 +4,16 @@
 function convertToRoman(num) {
     let ints = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
     let romanNum = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']
-    let romanObj = {
+    let init = 12;
+    while (num > 0) {
+                
+    }
+}
+
+console.log(convertToRoman(30));
+
+/*
+let romanObj = {
         1: 'I',
         4: 'IV',
         5: 'V',
@@ -18,13 +27,6 @@ function convertToRoman(num) {
         500: 'D',
         900: 'CM',
         1000: 'M'
-    }
-    let keyArr = Object.keys(romanObj);
-    let init = 12;
-    while (num > 0) {
-                
-    }
 }
-
-console.log(convertToRoman(30));
+*/
 //console.log(Math.floor(3549/1000));
