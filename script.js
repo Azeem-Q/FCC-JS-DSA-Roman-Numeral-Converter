@@ -6,7 +6,7 @@ function convertToRoman(num) {
     let romanNum = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']
     let finalArr = [];
     while (num > 0) {
-        for (let i = ints.length - 1; i > 0; i--) {
+        for (let i = ints.length - 1; i > 0; --i) {
             if (ints[i] > num) {
                 let div = Math.floor(num / ints[i]);
                 num = num % ints[i];
@@ -14,6 +14,7 @@ function convertToRoman(num) {
             }
         }    
     }
+    return finalArr;
     //console.log(romanNum[0].repeat(3));
 }
 
@@ -37,3 +38,7 @@ let romanObj = {
 }
 */
 //console.log(Math.floor(3549/1000));
+
+let a = 10;
+
+console.log(--a);
